@@ -52,18 +52,26 @@ body {
     position: relative;
     display: grid;
     grid-template-columns: [full-start] 1fr
-    [main-start] minmax(0,5fr)
-    [between] minmax(0,5fr)
+    [main-start] minmax(0,1fr)
+    [between] minmax(0px,200px)
     [main-end] 1fr
     [full-end];
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 200px;
 }
 
-.cards__container__card {
-    position: absolute;
+.cards__container__all {
     grid-column: main;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     grid-row: 2/4;
+    width: 100%;
+}
+
+.cards__container__card {
+    margin-right: 24px;
 }
 
 .cards__container__top {
@@ -81,8 +89,6 @@ body {
 }
 
 .cards__container__content {
-    position: absolute;
-    grid-column: between/main-end;
     grid-row: 2/4;
 }
 
@@ -100,7 +106,7 @@ body {
     font-size: 16px;
     font-weight: bold;
     margin-top: 8px;
-    padding: 12px 32px;
+    padding: 12px 24px;
 }
 
 .feed {
