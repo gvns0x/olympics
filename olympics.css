@@ -52,6 +52,16 @@ body {
     grid-column: full;
 }
 
+.cards__container__top {
+    background: linear-gradient(#08D8FF,#0087A1);
+    height: 74px;
+}
+
+.cards__container__bot {
+    background: linear-gradient(0.41deg, #00AECF 1.54%, #0092AD 90.3%);
+    height: 76px;
+}
+
 .feed {
     outline: 3px solid red;
     grid-column: main;
