@@ -50,16 +50,35 @@ body {
 .cards__container {
     outline: 3px solid blue;
     grid-column: full;
+    position: relative;
+    display: grid;
+    grid-template-columns: [full-start] 1fr
+    [main-start] minmax(0,5fr)
+    [between] minmax(0,3fr)
+    [main-end] 1fr
+    [full-end];
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 200px;
+}
+
+.cards__container__card {
+    position: absolute;
+    grid-column: main;
+    grid-row: 2/4;
 }
 
 .cards__container__top {
     background: linear-gradient(#08D8FF,#0087A1);
-    height: 74px;
+    grid-column: full;
+    height: 100%;
+    grid-row: 1/3;
 }
 
 .cards__container__bot {
     background: linear-gradient(0.41deg, #00AECF 1.54%, #0092AD 90.3%);
-    height: 76px;
+    height: 100%;
+    grid-column: full;
+    grid-row: 3/5;
 }
 
 .feed {
