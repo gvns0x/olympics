@@ -57,7 +57,7 @@ body {
     [main-end] 1fr
     [full-end];
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 200px;
+    height: 230px;
 }
 
 .cards__container__all {
@@ -66,6 +66,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     grid-row: 2/4;
     width: 100%;
 }
