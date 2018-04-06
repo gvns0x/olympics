@@ -200,6 +200,7 @@ body {
 @media screen and (min-width: 900px) {
     .cards__container {
         grid-column: main-start/between;
+        height: 100%;
     }
 
     .feed {
@@ -217,5 +218,9 @@ body {
     .header__menu {
         display: flex;
         flex-direction: row;
+    }
+
+    .cards__container__all {
+        height: 100%;
     }
 } 
