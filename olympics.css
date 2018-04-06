@@ -199,6 +199,11 @@ body {
 */
 
 @media screen and (min-width: 900px) {
+
+    body {
+        grid-template-rows: 10vh minmax(0,75vh) 15vh;
+    }
+
     .cards__container {
         grid-column: main-start/between;
         height: 100%;
@@ -206,6 +211,7 @@ body {
 
     .feed {
         grid-column: between/main-end;
+        overflow-y: scroll;
     }
 
     .c-feedblock {
