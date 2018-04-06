@@ -73,6 +73,7 @@ body {
 
 .cards__container__card {
     margin-right: 24px;
+    height: 123px;
 }
 
 .cards__container__top {
@@ -222,5 +223,16 @@ body {
 
     .cards__container__all {
         height: 100%;
+        flex-direction: column;
+    }
+
+    .cards__container__card {
+        height: 300px;
+    }
+
+    .cards__container__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 } 
